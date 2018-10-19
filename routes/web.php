@@ -26,3 +26,5 @@ Route::get('/halamantiga', function () {
 
 Route::get('halaman/contoh', 'Contoh@tambah');
 Route::resource('halaman','Contoh');
+
+Route::resource('mahasiswa','Mahasiswa');
