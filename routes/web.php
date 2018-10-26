@@ -23,8 +23,15 @@ Route::get('/halamandua', function () {
 Route::get('/halamantiga', function () {
     return view('halamantiga');
 });
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa');
+});
+Route::get('/user', function () {
+    return view('user');
+});
 
 Route::get('halaman/contoh', 'Contoh@tambah');
 Route::resource('halaman','Contoh');
 
 Route::resource('mahasiswa','Mahasiswa');
+Route::resource('user','User');

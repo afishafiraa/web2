@@ -39,8 +39,35 @@
             <li class="nav-brand">
                 <a href="/">Home</a>
             </li>
+			<li>
+                <a href="/halamandua">- Create</a>
+            </li>
             <li>
                 <a href="/halamandua">- Halaman Dua</a>
+            </li>
+            <li>
+                <a href="/halamantiga">- Halaman Tiga</a>
+            </li>
+			<li class="nav-brand">
+                <a href="/">Mahasiswa</a>
+            </li>
+			<li>
+                <a href="/mahasiswa/create">- Create</a>
+            </li>
+            <li>
+                <a href="/mahasiswa">- Data Mahasiswa</a>
+            </li>
+            <li>
+                <a href="/halamantiga">- Halaman Tiga</a>
+            </li>
+			<li class="nav-brand">
+                <a href="/">User</a>
+            </li>
+			<li>
+                <a href="/user/create">- Create</a>
+            </li>
+            <li>
+                <a href="/user">- Data User</a>
             </li>
             <li>
                 <a href="/halamantiga">- Halaman Tiga</a>
