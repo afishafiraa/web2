@@ -10,7 +10,7 @@
     <!-- Canonical -->
     <link rel="canonical" href="">
 
-    <title>Laravel 5.4</title>
+    <title>Hell-o</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -49,28 +49,16 @@
                 <a href="/halamantiga">- Halaman Tiga</a>
             </li>
 			<li class="nav-brand">
-                <a href="/">Mahasiswa</a>
+                <a href="/mahasiswa">Mahasiswa</a>
             </li>
 			<li>
                 <a href="/mahasiswa/create">- Create</a>
             </li>
-            <li>
-                <a href="/mahasiswa">- Data Mahasiswa</a>
-            </li>
-            <li>
-                <a href="/halamantiga">- Halaman Tiga</a>
-            </li>
-			<li class="nav-brand">
-                <a href="/">User</a>
+            <li class="nav-brand">
+                <a href="/user">User</a>
             </li>
 			<li>
                 <a href="/user/create">- Create</a>
-            </li>
-            <li>
-                <a href="/user">- Data User</a>
-            </li>
-            <li>
-                <a href="/halamantiga">- Halaman Tiga</a>
             </li>
         </ul>
     </aside>
