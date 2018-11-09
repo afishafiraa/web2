@@ -29,9 +29,13 @@ Route::get('/mahasiswa', function () {
 Route::get('/user', function () {
     return view('user');
 });
+Route::get('/file', function () {
+    return view('file');
+});
 
 Route::get('halaman/contoh', 'Contoh@tambah');
 Route::resource('halaman','Contoh');
 
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');
+Route::resource('file','File');

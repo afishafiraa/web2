@@ -60,6 +60,12 @@
 			<li>
                 <a href="/user/create">- Create</a>
             </li>
+            <li class="nav-brand">
+                <a href="/file">User</a>
+            </li>
+			<li>
+                <a href="/file/create">- Create</a>
+            </li>
         </ul>
     </aside>
 
