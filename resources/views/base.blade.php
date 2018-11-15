@@ -61,11 +61,21 @@
                 <a href="/user/create">- Create</a>
             </li>
             <li class="nav-brand">
-                <a href="/file">User</a>
+                <a href="/file">File</a>
             </li>
 			<li>
                 <a href="/file/create">- Create</a>
             </li>
+            <li class="nav-brand">
+                <a href="/barang">Barang</a>
+            </li>
+            <li>
+                <a href="/barang/create">- Create</a>
+            </li>
+        </ul>
+        <ul>
+            <br>
+            <br>
         </ul>
     </aside>
 

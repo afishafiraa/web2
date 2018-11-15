@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ModelUser;
+use App\ModelBarang;
 
-class User extends Controller
+
+class Barang extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,8 @@ class User extends Controller
      */
     public function index()
     {
-        $data = ModelUser::all();
-		return view('user',compact('data'));
-    }
+        $data = ModelBarang::all();
+        return view('barang',compact('data'));    }
 
     /**
      * Show the form for creating a new resource.
@@ -25,8 +25,7 @@ class User extends Controller
      */
     public function create()
     {
-        return view('user_create');
-    }
+        return view('barang_create');    }
 
     /**
      * Store a newly created resource in storage.
@@ -36,13 +35,14 @@ class User extends Controller
      */
     public function store(Request $request)
     {
-        $data = new ModelUser();
-		$data->nama = $request->nama;
-		$data->email = $request->email;
-		$data->username = $request->username;
-		$data->password = $request->password;
-		$data->save();
-			return redirect()->route('user.index')->with('alert-success','Berhasil Menambahkan Data!');
+         $data = new ModelBarang();
+        $data->nama_barang = $request->nama_barang;
+        $data->stok = $request->stok;
+        $data->harga = $request->harga;
+        $data->expired_date = $request->expired_date;
+        $data->tanggal_produksi = $request->tanggal_produksi;
+        $data->save();
+            return redirect()->route('barang.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
 
     /**
@@ -76,13 +76,14 @@ class User extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = ModelUser::where('id',$id)->first();
-        $data->nama = $request -> nama;
-        $data->email = $request -> email;
-        $data->username = $request -> username;
-        $data->password = $request -> password;
+        $data = ModelBarang::where('id',$id)->first();
+        $data->nama_barang = $request -> nama_barang;
+        $data->stok = $request -> stok;
+        $data->harga = $request -> harga;
+        $data->expired_date = $request -> expired_date;
+        $data->tanggal_produksi = $request -> tanggal_produksi;
         $data -> save();
-        return redirect()->route('user.index')->with(
+        return redirect()->route('barang.index')->with(
             'alert-success','Data Berhasil diubah'
         );
     }
@@ -95,9 +96,9 @@ class User extends Controller
      */
     public function destroy($id)
     {
-        $data = ModelUser::where('id',$id)->first();
+        $data = ModelBarang::where('id',$id)->first();
         $data-> delete();
-            return redirect()->route('user.index')->with(
+            return redirect()->route('barang.index')->with(
                 'alert-success','Data Berhasil di hapus'
             );
     }

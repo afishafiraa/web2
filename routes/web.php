@@ -32,6 +32,9 @@ Route::get('/user', function () {
 Route::get('/file', function () {
     return view('file');
 });
+Route::get('/barang', function () {
+    return view('barang');
+});
 
 Route::get('halaman/contoh', 'Contoh@tambah');
 Route::resource('halaman','Contoh');
@@ -39,3 +42,4 @@ Route::resource('halaman','Contoh');
 Route::resource('mahasiswa','Mahasiswa');
 Route::resource('user','User');
 Route::resource('file','File');
+Route::resource('barang','Barang');
